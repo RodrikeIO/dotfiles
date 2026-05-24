@@ -62,18 +62,10 @@ if [ -d assets/cursors ]; then
     sudo rsync -av assets/cursors/ /usr/share/icons/
 fi
 
-read -rp "¿Instalar y activar SDDM con tema Sugar Candy? [s/N]: " install_sddm
+read -rp "¿Instalar y activar SDDM como login gráfico? [s/N]: " install_sddm
 if [[ "$install_sddm" =~ ^[sS]$ ]]; then
-    echo "[11] Instalando SDDM..."
+    echo "[11] Instalando SDDM limpio..."
     sudo pacman -S --needed - < packages/sddm.txt
-
-    echo "Copiando tema Sugar Candy..."
-    sudo mkdir -p /usr/share/sddm/themes
-    sudo rsync -av sddm/themes/sugar-candy/ /usr/share/sddm/themes/sugar-candy/
-
-    echo "Copiando configuración de SDDM..."
-    sudo mkdir -p /etc/sddm.conf.d
-    sudo rsync -av sddm/conf.d/ /etc/sddm.conf.d/
 
     echo "Activando SDDM..."
     sudo systemctl enable sddm
