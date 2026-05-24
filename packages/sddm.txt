@@ -1,0 +1,3 @@
+sddm
+qt6-svg
+qt6-virtualkeyboard

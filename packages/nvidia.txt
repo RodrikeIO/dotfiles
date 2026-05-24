@@ -1,0 +1,6 @@
+nvidia-open-dkms
+nvidia-utils
+nvidia-settings
+lib32-nvidia-utils
+dkms
+linux-zen-headers

@@ -1,0 +1,18 @@
+# RodrikeOS Wofi config
+
+show=drun
+width=620
+height=420
+location=center
+allow_markup=true
+always_parse_args=true
+show_all=false
+term=kitty
+hide_scroll=true
+print_command=true
+insensitive=true
+prompt=Buscar aplicación...
+columns=1
+matching=fuzzy
+sort_order=default
+gtk_dark=true

@@ -1,0 +1,12 @@
+steam
+lutris
+gamemode
+lib32-gamemode
+mangohud
+lib32-mangohud
+gamescope
+protontricks
+wine
+wine-mono
+wine-gecko
+winetricks

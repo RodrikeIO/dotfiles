@@ -1,0 +1,81 @@
+/* =========================================================
+   RodrikeOS Wofi Theme
+   Retro-modern anime beach style
+   ========================================================= */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", "Noto Color Emoji", sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+window {
+    margin: 0px;
+    padding: 18px;
+    border-radius: 22px;
+    background-color: rgba(18, 38, 63, 0.88);
+    border: 1px solid rgba(142, 227, 239, 0.40);
+    color: #fff6ec;
+}
+
+#outer-box {
+    margin: 0px;
+    padding: 18px;
+    border-radius: 22px;
+    background-color: transparent;
+}
+
+#input {
+    margin: 0px 0px 14px 0px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(246, 214, 167, 0.45);
+    background-color: rgba(255, 246, 236, 0.12);
+    color: #fff6ec;
+    font-weight: 600;
+}
+
+#input:focus {
+    border: 1px solid rgba(142, 227, 239, 0.85);
+    background-color: rgba(255, 246, 236, 0.16);
+}
+
+#inner-box {
+    margin: 0px;
+    padding: 4px;
+    border-radius: 18px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+#entry {
+    margin: 4px 0px;
+    padding: 10px 14px;
+    border-radius: 16px;
+    background-color: transparent;
+    color: #fff6ec;
+}
+
+#entry:selected {
+    background: linear-gradient(135deg, rgba(142, 227, 239, 0.95), rgba(246, 214, 167, 0.95));
+    color: #1b314f;
+}
+
+#entry:hover {
+    background-color: rgba(255, 246, 236, 0.12);
+}
+
+#text {
+    margin: 0px 0px 0px 10px;
+    color: inherit;
+}
+
+#img {
+    margin: 0px 8px 0px 0px;
+}

@@ -1,0 +1,129 @@
+/* =========================================================
+   RodrikeOS Waybar Theme
+   Retro-modern anime beach style
+   ========================================================= */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", "Noto Color Emoji", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #fff6ec;
+}
+
+/* Main modules */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#backlight,
+#network,
+#battery,
+#tray {
+    background: rgba(18, 38, 63, 0.72);
+    color: #fff6ec;
+    border: 1px solid rgba(120, 210, 230, 0.32);
+    border-radius: 18px;
+    padding: 6px 12px;
+    margin: 0 3px;
+    box-shadow: 0 0 12px rgba(47, 176, 202, 0.18);
+}
+
+/* Workspaces container */
+#workspaces {
+    padding: 4px 6px;
+    background: rgba(15, 31, 54, 0.78);
+}
+
+/* Workspace buttons */
+#workspaces button {
+    color: #9edfe8;
+    background: transparent;
+    border-radius: 14px;
+    padding: 4px 8px;
+    margin: 0 2px;
+    transition: all 0.18s ease;
+}
+
+#workspaces button:hover {
+    color: #fff6ec;
+    background: rgba(255, 246, 236, 0.14);
+}
+
+#workspaces button.active {
+    color: #1b314f;
+    background: linear-gradient(135deg, #8ee3ef, #f6d6a7);
+    box-shadow: 0 0 10px rgba(142, 227, 239, 0.35);
+}
+
+#workspaces button.urgent {
+    color: #fff6ec;
+    background: #d9486e;
+}
+
+/* Window title */
+#window {
+    color: #d8f7ff;
+    background: rgba(23, 54, 83, 0.58);
+}
+
+/* Center clock */
+#clock {
+    color: #1b314f;
+    background: linear-gradient(135deg, rgba(246, 214, 167, 0.95), rgba(255, 246, 236, 0.92));
+    border: 1px solid rgba(255, 246, 236, 0.55);
+    font-weight: 700;
+}
+
+/* Audio */
+#pulseaudio {
+    color: #ffd6e1;
+}
+
+#pulseaudio.muted {
+    color: #f6a1b6;
+    background: rgba(92, 35, 57, 0.72);
+}
+
+/* Brightness */
+#backlight {
+    color: #f6d6a7;
+}
+
+/* Network */
+#network {
+    color: #9edfe8;
+}
+
+#network.disconnected {
+    color: #f6a1b6;
+}
+
+/* Battery */
+#battery {
+    color: #b8f3d4;
+}
+
+#battery.warning {
+    color: #f6d6a7;
+}
+
+#battery.critical {
+    color: #ff8fa3;
+    background: rgba(92, 35, 57, 0.75);
+}
+
+#battery.charging {
+    color: #b8f3d4;
+    background: rgba(26, 70, 72, 0.72);
+}
+
+/* Tray */
+#tray {
+    padding: 6px 10px;
+}
