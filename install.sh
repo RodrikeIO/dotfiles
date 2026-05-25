@@ -38,13 +38,13 @@ echo "[5] Instalando apps..."
 sudo pacman -S --needed - < packages/apps.txt
 
 echo "[6] Instalando paquetes gaming..."
-sudo pacman -S --needed - < packages/gaming.txt
 
-read -rp "¿Aplicar Rodrike Tweaks para gaming/Steam? [s/N]: " rodrike_tweaks
-if [[ "$rodrike_tweaks" =~ ^[sS]$ ]]; then
-    ./scripts/setup-rodrike-tweaks.sh
+if pacman -Si cachyos-gaming-meta >/dev/null 2>&1; then
+    echo "Detectado CachyOS/repos CachyOS. Instalando paquetes gaming de CachyOS..."
+    sudo pacman -S --needed - < packages/gaming-cachyos.txt
 else
-    echo "Saltando Rodrike Tweaks..."
+    echo "No se detectaron paquetes gaming de CachyOS. Usando lista gaming genérica..."
+    sudo pacman -S --needed - < packages/gaming.txt
 fi
 
 read -rp "¿Instalar drivers NVIDIA? [s/N]: " install_nvidia

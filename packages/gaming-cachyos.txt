@@ -1,0 +1,4 @@
+cachyos-gaming-meta
+cachyos-gaming-applications
+discord
+prismlauncher
