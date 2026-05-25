@@ -1,4 +1,4 @@
 cachyos-gaming-meta
 cachyos-gaming-applications
-vesktop
+discord
 prismlauncher
