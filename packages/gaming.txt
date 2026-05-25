@@ -1,7 +1,7 @@
 steam
 lutris
-gamemode
-lib32-gamemode
+prismlauncher
+discord
 mangohud
 lib32-mangohud
 gamescope
@@ -10,3 +10,4 @@ wine
 wine-mono
 wine-gecko
 winetricks
+

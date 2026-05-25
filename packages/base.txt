@@ -4,9 +4,9 @@ curl
 wget
 rsync
 nano
-vim
 sudo
 networkmanager
+network-manager-applet
 bluez
 bluez-utils
 blueman
@@ -14,7 +14,4 @@ xdg-user-dirs
 xdg-utils
 unzip
 zip
-unrar
-7zip
-fastfetch
-btop
+

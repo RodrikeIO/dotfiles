@@ -40,6 +40,13 @@ sudo pacman -S --needed - < packages/apps.txt
 echo "[6] Instalando paquetes gaming..."
 sudo pacman -S --needed - < packages/gaming.txt
 
+read -rp "¿Aplicar Rodrike Tweaks para gaming/Steam? [s/N]: " rodrike_tweaks
+if [[ "$rodrike_tweaks" =~ ^[sS]$ ]]; then
+    ./scripts/setup-rodrike-tweaks.sh
+else
+    echo "Saltando Rodrike Tweaks..."
+fi
+
 read -rp "¿Instalar drivers NVIDIA? [s/N]: " install_nvidia
 if [[ "$install_nvidia" =~ ^[sS]$ ]]; then
     echo "[7] Instalando NVIDIA..."
