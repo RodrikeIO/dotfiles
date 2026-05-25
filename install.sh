@@ -34,6 +34,13 @@ fi
 echo "[4] Instalando Hyprland y entorno..."
 sudo pacman -S --needed - < packages/hyprland.txt
 
+read -rp "¿Aplicar Rodrike DNS Tweaks con dnsmasq? [s/N]: " dns_tweaks
+if [[ "$dns_tweaks" =~ ^[sS]$ ]]; then
+    ./scripts/setup-dnsmasq-networkmanager.sh
+else
+    echo "Saltando Rodrike DNS Tweaks..."
+fi
+
 echo "[5] Instalando apps..."
 sudo pacman -S --needed - < packages/apps.txt
 
@@ -45,6 +52,13 @@ if pacman -Si cachyos-gaming-meta >/dev/null 2>&1; then
 else
     echo "No se detectaron paquetes gaming de CachyOS. Usando lista gaming genérica..."
     sudo pacman -S --needed - < packages/gaming.txt
+fi
+
+read -rp "¿Instalar Rodrike Performance para juegos? [s/N]: " rodrike_performance
+if [[ "$rodrike_performance" =~ ^[sS]$ ]]; then
+    ./scripts/setup-rodrike-performance.sh
+else
+    echo "Saltando Rodrike Performance..."
 fi
 
 read -rp "¿Instalar drivers NVIDIA? [s/N]: " install_nvidia
